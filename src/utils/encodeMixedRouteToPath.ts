@@ -1,6 +1,6 @@
 import { pack } from '@ethersproject/solidity'
 import { Currency, Token } from '@uniswap/sdk-core'
-import { Pool } from '@uniswap/v3-sdk'
+import { Pool } from 'ramsesexchange-v3-sdk'
 import { Pair } from '@uniswap/v2-sdk'
 import { MixedRouteSDK } from '../entities/mixedRoute/route'
 import { V2_FEE_PATH_PLACEHOLDER } from '../constants'

@@ -1,6 +1,6 @@
 import { Currency, Token } from '@uniswap/sdk-core'
 import { Pair } from '@uniswap/v2-sdk'
-import { Pool } from '@uniswap/v3-sdk'
+import { Pool } from 'ramsesexchange-v3-sdk'
 import { MixedRouteSDK } from '../entities/mixedRoute/route'
 
 /**

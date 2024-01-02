@@ -13,7 +13,7 @@ import {
   SelfPermit,
   toHex,
   Trade as V3Trade,
-} from '@uniswap/v3-sdk'
+} from 'ramsesexchange-v3-sdk'
 import invariant from 'tiny-invariant'
 import JSBI from 'jsbi'
 import { ADDRESS_THIS, MSG_SENDER } from './constants'
