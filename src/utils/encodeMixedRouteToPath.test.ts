@@ -1,5 +1,5 @@
 import { CurrencyAmount, Ether, Token, WETH9 } from '@uniswap/sdk-core'
-import { Pair } from '@uniswap/v2-sdk'
+import { Pair } from 'ramsesexchange-v2-sdk'
 import { encodeSqrtRatioX96, FeeAmount, Pool } from 'ramsesexchange-v3-sdk'
 import { MixedRouteSDK } from '../entities/mixedRoute/route'
 import { encodeMixedRouteToPath } from './encodeMixedRouteToPath'
@@ -17,11 +17,11 @@ describe('#encodeMixedRouteToPath', () => {
   const pool_0_weth = new Pool(token0, weth, FeeAmount.MEDIUM, encodeSqrtRatioX96(1, 1), 0, 0, [])
   const pool_1_weth = new Pool(token1, weth, FeeAmount.MEDIUM, encodeSqrtRatioX96(1, 1), 0, 0, [])
 
-  const pair_0_1 = new Pair(CurrencyAmount.fromRawAmount(token0, '100'), CurrencyAmount.fromRawAmount(token1, '200'))
-  const pair_1_2 = new Pair(CurrencyAmount.fromRawAmount(token1, '150'), CurrencyAmount.fromRawAmount(token2, '150'))
-  const pair_0_weth = new Pair(CurrencyAmount.fromRawAmount(token0, '100'), CurrencyAmount.fromRawAmount(weth, '100'))
-  const pair_1_weth = new Pair(CurrencyAmount.fromRawAmount(token1, '175'), CurrencyAmount.fromRawAmount(weth, '100'))
-  const pair_2_weth = new Pair(CurrencyAmount.fromRawAmount(token2, '150'), CurrencyAmount.fromRawAmount(weth, '100'))
+  const pair_0_1 = new Pair(CurrencyAmount.fromRawAmount(token0, '100'), CurrencyAmount.fromRawAmount(token1, '200'), true)
+  const pair_1_2 = new Pair(CurrencyAmount.fromRawAmount(token1, '150'), CurrencyAmount.fromRawAmount(token2, '150'), true)
+  const pair_0_weth = new Pair(CurrencyAmount.fromRawAmount(token0, '100'), CurrencyAmount.fromRawAmount(weth, '100'), true)
+  const pair_1_weth = new Pair(CurrencyAmount.fromRawAmount(token1, '175'), CurrencyAmount.fromRawAmount(weth, '100'), true)
+  const pair_2_weth = new Pair(CurrencyAmount.fromRawAmount(token2, '150'), CurrencyAmount.fromRawAmount(weth, '100'), true)
 
   const route_0_V3_1 = new MixedRouteSDK([pool_0_1_medium], token0, token1)
   const route_0_V3_1_V3_2 = new MixedRouteSDK([pool_0_1_medium, pool_1_2_low], token0, token2)

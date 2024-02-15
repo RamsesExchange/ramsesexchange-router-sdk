@@ -1,6 +1,6 @@
 {
-  "name": "@uniswap/router-sdk",
-  "version": "1.7.1",
+  "name": "ramsesexchange-router-sdk",
+  "version": "1.8.0",
   "description": "An sdk for routing swaps using Uniswap v2 and Uniswap v3.",
   "publishConfig": {
     "access": "public"
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Uniswap/router-sdk.git"
+    "url": "https://github.com/RamsesExchange/ramsesexchange-router-sdk.git"
   },
   "keywords": [
     "uniswap",
@@ -29,8 +29,8 @@
     "@ethersproject/abi": "^5.5.0",
     "@uniswap/sdk-core": "^4.0.7",
     "@uniswap/swap-router-contracts": "^1.1.0",
-    "@uniswap/v2-sdk": "^3.2.0",
-    "ramsesexchange-v3-sdk": "^3.10.0"
+    "ramsesexchange-v2-sdk": "^3.3.2",
+    "ramsesexchange-v3-sdk": "^3.13.2"
   },
   "devDependencies": {
     "@types/jest": "^24.0.25",

@@ -2,7 +2,7 @@ import { Ether, Token, WETH9, CurrencyAmount } from '@uniswap/sdk-core'
 import { Route as V3RouteSDK, Pool, FeeAmount, TickMath, encodeSqrtRatioX96 } from 'ramsesexchange-v3-sdk'
 import { RouteV3 } from './route'
 import { Protocol } from './protocol'
-import { Route as V2RouteSDK, Pair } from '@uniswap/v2-sdk'
+import { Route as V2RouteSDK, Pair } from 'ramsesexchange-v2-sdk'
 import { RouteV2 } from './route'
 
 describe('RouteV3', () => {
