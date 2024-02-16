@@ -1660,18 +1660,6 @@
   resolved "https://registry.npmjs.org/@uniswap/lib/-/lib-4.0.1-alpha.tgz"
   integrity sha512-f6UIliwBbRsgVLxIaBANF6w09tYqc6Y/qXdsrbEmXHyFA7ILiKrIwRFXe1yOg8M3cksgVsO9N7yuL2DdCGQKBA==
 
-"@uniswap/sdk-core@^4", "@uniswap/sdk-core@^4.0.7":
-  version "4.0.7"
-  resolved "https://registry.yarnpkg.com/@uniswap/sdk-core/-/sdk-core-4.0.7.tgz#90dfd070d7e44494234618af398da158363ae827"
-  integrity sha512-jscx7KUIWzQatcL5PHY6xy0gEL9IGQcL5h/obxzX9foP2KoNk9cq66Ia8I2Kvpa7zBcPOeW1hU0hJNBq6CzcIQ==
-  dependencies:
-    "@ethersproject/address" "^5.0.2"
-    big.js "^5.2.2"
-    decimal.js-light "^2.5.0"
-    jsbi "^3.1.4"
-    tiny-invariant "^1.1.0"
-    toformat "^2.0.0"
-
 "@uniswap/sdk-core@^4.1.0":
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/@uniswap/sdk-core/-/sdk-core-4.1.2.tgz#8bf64ef6881574f1c3a3c5800916aa2b2965d00a"
@@ -5354,25 +5342,25 @@ qs@~6.5.2:
   resolved "https://registry.npmjs.org/qs/-/qs-6.5.2.tgz"
   integrity sha512-N5ZAX4/LxJmF+7wN74pUD6qAh9/wnvdQcjq9TZjevvXzSUo7bfmw91saqMjzGS2xq91/odN2dW/WOl7qQHNDGA==
 
-ramsesexchange-v2-sdk@^3.3.2:
-  version "3.3.2"
-  resolved "https://registry.yarnpkg.com/ramsesexchange-v2-sdk/-/ramsesexchange-v2-sdk-3.3.2.tgz#01132bfc9498ace8a304a8fe8a815cb20a82cbb0"
-  integrity sha512-/tUnab6w8bfPBa/vPzQ/7H1rmprSIVMUl2SKc1wyECT1bB1OM6iTlLK2dRf1q7iR0i6tnIlI7QOsit/1+jyenA==
+ramsesexchange-v2-sdk@^3.3.3:
+  version "3.3.3"
+  resolved "https://registry.yarnpkg.com/ramsesexchange-v2-sdk/-/ramsesexchange-v2-sdk-3.3.3.tgz#d298aec4986dd2e04ddfa42cc819165b8924add4"
+  integrity sha512-j/ymEmEOb613GaqC7S+JliJL5oK2EvxcgEmXy91kq+WBYneIbwMhLOSDatnDrOGgyj0S7VgQAzcrKRTp7/O7Ng==
   dependencies:
     "@ethersproject/address" "^5.0.0"
     "@ethersproject/solidity" "^5.0.0"
-    "@uniswap/sdk-core" "^4.0.7"
+    "@uniswap/sdk-core" "^4.1.0"
     tiny-invariant "^1.1.0"
     tiny-warning "^1.0.3"
 
-ramsesexchange-v3-sdk@^3.13.2:
-  version "3.13.2"
-  resolved "https://registry.yarnpkg.com/ramsesexchange-v3-sdk/-/ramsesexchange-v3-sdk-3.13.2.tgz#c241ca98606ae47f4bddb61e873673836a28da18"
-  integrity sha512-tr1Zj7q/GrTSv86L8TfG6nAC1reYPBaXpz5qKkTqZvwKWcypqjdeb6IZZi4gBAlymymafsYVMBckm5jOL4mtrg==
+ramsesexchange-v3-sdk@^3.13.3:
+  version "3.13.3"
+  resolved "https://registry.yarnpkg.com/ramsesexchange-v3-sdk/-/ramsesexchange-v3-sdk-3.13.3.tgz#76310b889d57cf5e00a0be6fa87df7935dcd35ac"
+  integrity sha512-4sC1BDgWprmEMq3xIDOpoSAHLrsp03Z9t4fqUU5y7nSxMfydNCms/w3s7NHbywtDBuyR4Zxq8kGVIkCjLiLczA==
   dependencies:
     "@ethersproject/abi" "^5.0.12"
     "@ethersproject/solidity" "^5.0.9"
-    "@uniswap/sdk-core" "^4"
+    "@uniswap/sdk-core" "^4.1.0"
     "@uniswap/swap-router-contracts" "^1.2.1"
     "@uniswap/v3-periphery" "^1.1.1"
     "@uniswap/v3-staker" "1.0.0"
