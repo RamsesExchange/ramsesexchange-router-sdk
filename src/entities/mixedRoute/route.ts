@@ -4,7 +4,7 @@ import { Currency, Price, Token } from '@uniswap/sdk-core'
 import { Pool } from 'ramsesexchange-v3-sdk'
 import { Pair } from 'ramsesexchange-v2-sdk'
 
-type TPool = Pair | Pool
+export type TPool = Pair | Pool
 
 /**
  * Represents a list of pools or pairs through which a swap can occur

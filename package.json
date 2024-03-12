@@ -1,6 +1,6 @@
 {
   "name": "ramsesexchange-router-sdk",
-  "version": "1.9.2",
+  "version": "1.9.3",
   "description": "An sdk for routing swaps using Uniswap v2 and Uniswap v3.",
   "publishConfig": {
     "access": "public"
