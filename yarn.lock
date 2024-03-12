@@ -5353,10 +5353,10 @@ ramsesexchange-v2-sdk@^3.3.3:
     tiny-invariant "^1.1.0"
     tiny-warning "^1.0.3"
 
-ramsesexchange-v3-sdk@^3.14.3:
-  version "3.14.3"
-  resolved "https://registry.yarnpkg.com/ramsesexchange-v3-sdk/-/ramsesexchange-v3-sdk-3.14.3.tgz#5670019dc3e7b015ce42b2ae32ce830191f2dfb4"
-  integrity sha512-7RjrlkBCQ1rew7kHdK+RTJUvze9xUBofN5cRN3paVza5E2oCZVebwyF+tFg5KdlLEqub88DhYIrm0nWudbJacg==
+ramsesexchange-v3-sdk@^3.15.2:
+  version "3.15.2"
+  resolved "https://registry.yarnpkg.com/ramsesexchange-v3-sdk/-/ramsesexchange-v3-sdk-3.15.2.tgz#f7c2a03cd182cc253e87c4918572b7624f4c1e72"
+  integrity sha512-G8Gi38ThoeyXLkaKG7TRAI67p7h1Yqv3Nw7E92CtPFL+p5neAntJPDtFzg3OAneEN2yVX1o3DWHLuzjqe4Wr/Q==
   dependencies:
     "@ethersproject/abi" "^5.0.12"
     "@ethersproject/solidity" "^5.0.9"
