@@ -1,6 +1,6 @@
 {
   "name": "@kingdomdotone/router-sdk",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "An sdk for routing swaps using Uniswap v2 and Uniswap v3.",
   "publishConfig": {
     "access": "public"
