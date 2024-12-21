@@ -8,7 +8,7 @@ import {
   NonfungiblePositionManager,
   Position,
   toHex,
-} from 'ramsesexchange-v3-sdk'
+} from '@kingdomdotone/v3-sdk'
 import JSBI from 'jsbi'
 
 // condensed version of v3-sdk AddLiquidityOptions containing only necessary swap + add attributes

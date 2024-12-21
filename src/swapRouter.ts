@@ -13,7 +13,7 @@ import {
   SelfPermit,
   toHex,
   Trade as V3Trade,
-} from 'ramsesexchange-v3-sdk'
+} from '@kingdomdotone/v3-sdk'
 import invariant from 'tiny-invariant'
 import JSBI from 'jsbi'
 import { ADDRESS_THIS, MSG_SENDER } from './constants'
@@ -159,7 +159,7 @@ export abstract class SwapRouter {
           const exactInputSingleParams = {
             tokenIn: route.tokenPath[0].address,
             tokenOut: route.tokenPath[1].address,
-            fee: route.pools[0].fee,
+            tickSpacing: route.pools[0].tickSpacing,
             recipient,
             amountIn,
             amountOutMinimum: performAggregatedSlippageCheck ? 0 : amountOut,
@@ -171,7 +171,7 @@ export abstract class SwapRouter {
           const exactOutputSingleParams = {
             tokenIn: route.tokenPath[0].address,
             tokenOut: route.tokenPath[1].address,
-            fee: route.pools[0].fee,
+            tickSpacing: route.pools[0].tickSpacing,
             recipient,
             amountOut,
             amountInMaximum: amountIn,
@@ -251,7 +251,7 @@ export abstract class SwapRouter {
           const exactInputSingleParams = {
             tokenIn: route.path[0].address,
             tokenOut: route.path[1].address,
-            fee: (route.pools as Pool[])[0].fee,
+            tickSpacing: (route.pools as Pool[])[0].tickSpacing,
             recipient,
             amountIn,
             amountOutMinimum: performAggregatedSlippageCheck ? 0 : amountOut,

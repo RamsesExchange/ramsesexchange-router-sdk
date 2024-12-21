@@ -1,6 +1,6 @@
 import { pack } from '@ethersproject/solidity'
 import { Currency, Token } from '@uniswap/sdk-core'
-import { Pool } from 'ramsesexchange-v3-sdk'
+import { Pool } from '@kingdomdotone/v3-sdk'
 import { Pair } from 'ramsesexchange-v2-sdk'
 import { MixedRouteSDK } from '../entities/mixedRoute/route'
 import { V2_FEE_PATH_STABLE_PLACEHOLDER, V2_FEE_PATH_VOLATILE_PLACEHOLDER } from '../constants'
@@ -24,11 +24,11 @@ export function encodeMixedRouteToPath(route: MixedRouteSDK<Currency, Currency>)
       if (index === 0) {
         return {
           inputToken: outputToken,
-          types: ['address', 'uint24', 'address'],
+          types: ['address', 'int24', 'address'],
           path: [
             inputToken.address,
             pool instanceof Pool
-              ? pool.fee
+              ? pool.tickSpacing
               : pool.stable
               ? V2_FEE_PATH_STABLE_PLACEHOLDER
               : V2_FEE_PATH_VOLATILE_PLACEHOLDER,
@@ -38,11 +38,11 @@ export function encodeMixedRouteToPath(route: MixedRouteSDK<Currency, Currency>)
       } else {
         return {
           inputToken: outputToken,
-          types: [...types, 'uint24', 'address'],
+          types: [...types, 'int24', 'address'],
           path: [
             ...path,
             pool instanceof Pool
-              ? pool.fee
+              ? pool.tickSpacing
               : pool.stable
               ? V2_FEE_PATH_STABLE_PLACEHOLDER
               : V2_FEE_PATH_VOLATILE_PLACEHOLDER,

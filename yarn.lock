@@ -1392,6 +1392,20 @@
     "@types/yargs" "^15.0.0"
     chalk "^3.0.0"
 
+"@kingdomdotone/v3-sdk@0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@kingdomdotone/v3-sdk/-/v3-sdk-0.0.2.tgz#9ee5ec31754a6339343c32dece819c777db4cc76"
+  integrity sha512-emATamRqTyQO73TRsSLu1GmKSMFz1F1u28DN5tre0sGEgCeGB6xZp3wTkwmaAkftVmC5qZ3xzjh9MyKVmUjZeA==
+  dependencies:
+    "@ethersproject/abi" "^5.0.12"
+    "@ethersproject/solidity" "^5.0.9"
+    "@uniswap/sdk-core" "^4.1.0"
+    "@uniswap/swap-router-contracts" "^1.2.1"
+    "@uniswap/v3-periphery" "^1.1.1"
+    "@uniswap/v3-staker" "1.0.0"
+    tiny-invariant "^1.1.0"
+    tiny-warning "^1.0.3"
+
 "@openzeppelin/contracts@3.4.1-solc-0.7-2":
   version "3.4.1-solc-0.7-2"
   resolved "https://registry.npmjs.org/@openzeppelin/contracts/-/contracts-3.4.1-solc-0.7-2.tgz"
@@ -5350,20 +5364,6 @@ ramsesexchange-v2-sdk@^3.3.3:
     "@ethersproject/address" "^5.0.0"
     "@ethersproject/solidity" "^5.0.0"
     "@uniswap/sdk-core" "^4.1.0"
-    tiny-invariant "^1.1.0"
-    tiny-warning "^1.0.3"
-
-ramsesexchange-v3-sdk@^3.15.2:
-  version "3.15.2"
-  resolved "https://registry.yarnpkg.com/ramsesexchange-v3-sdk/-/ramsesexchange-v3-sdk-3.15.2.tgz#f7c2a03cd182cc253e87c4918572b7624f4c1e72"
-  integrity sha512-G8Gi38ThoeyXLkaKG7TRAI67p7h1Yqv3Nw7E92CtPFL+p5neAntJPDtFzg3OAneEN2yVX1o3DWHLuzjqe4Wr/Q==
-  dependencies:
-    "@ethersproject/abi" "^5.0.12"
-    "@ethersproject/solidity" "^5.0.9"
-    "@uniswap/sdk-core" "^4.1.0"
-    "@uniswap/swap-router-contracts" "^1.2.1"
-    "@uniswap/v3-periphery" "^1.1.1"
-    "@uniswap/v3-staker" "1.0.0"
     tiny-invariant "^1.1.0"
     tiny-warning "^1.0.3"
 

@@ -1,6 +1,6 @@
 import { CurrencyAmount, Ether, Token, WETH9 } from '@uniswap/sdk-core'
 import { Pair } from 'ramsesexchange-v2-sdk'
-import { encodeSqrtRatioX96, FeeAmount, Pool } from 'ramsesexchange-v3-sdk'
+import { encodeSqrtRatioX96, FeeAmount, Pool } from '@kingdomdotone/v3-sdk'
 import { MixedRouteSDK } from '../entities/mixedRoute/route'
 import { encodeMixedRouteToPath } from './encodeMixedRouteToPath'
 

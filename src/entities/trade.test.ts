@@ -11,7 +11,7 @@ import {
   TickMath,
   nearestUsableTick,
   encodeSqrtRatioX96,
-} from 'ramsesexchange-v3-sdk'
+} from '@kingdomdotone/v3-sdk'
 import { Pair, Route as V2RouteSDK } from 'ramsesexchange-v2-sdk'
 import { MixedRouteSDK } from './mixedRoute/route'
 

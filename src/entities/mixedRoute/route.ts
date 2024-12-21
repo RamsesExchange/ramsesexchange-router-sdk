@@ -1,7 +1,7 @@
 import invariant from 'tiny-invariant'
 
 import { Currency, Price, Token } from '@uniswap/sdk-core'
-import { Pool } from 'ramsesexchange-v3-sdk'
+import { Pool } from '@kingdomdotone/v3-sdk'
 import { Pair } from 'ramsesexchange-v2-sdk'
 
 export type TPool = Pair | Pool

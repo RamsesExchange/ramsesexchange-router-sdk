@@ -1,7 +1,7 @@
 // entities/route.ts
 
 import { Route as V2RouteSDK, Pair } from 'ramsesexchange-v2-sdk'
-import { Route as V3RouteSDK, Pool } from 'ramsesexchange-v3-sdk'
+import { Route as V3RouteSDK, Pool } from '@kingdomdotone/v3-sdk'
 import { Protocol } from './protocol'
 import { Currency, Price, Token } from '@uniswap/sdk-core'
 import { MixedRouteSDK } from './mixedRoute/route'

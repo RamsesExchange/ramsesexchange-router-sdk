@@ -1,6 +1,6 @@
 import { Currency, CurrencyAmount, Fraction, Percent, Price, TradeType } from '@uniswap/sdk-core'
 import { Pair, Route as V2RouteSDK, Trade as V2TradeSDK } from 'ramsesexchange-v2-sdk'
-import { Pool, Route as V3RouteSDK, Trade as V3TradeSDK } from 'ramsesexchange-v3-sdk'
+import { Pool, Route as V3RouteSDK, Trade as V3TradeSDK } from '@kingdomdotone/v3-sdk'
 import invariant from 'tiny-invariant'
 import { ONE, ONE_HUNDRED_PERCENT, ZERO, ZERO_PERCENT } from '../constants'
 import { MixedRouteSDK } from './mixedRoute/route'
@@ -106,7 +106,7 @@ export class Trade<TInput extends Currency, TOutput extends Currency, TTradeType
     for (const { route } of this.swaps) {
       for (const pool of route.pools) {
         if (pool instanceof Pool) {
-          poolAddressSet.add(Pool.getAddress(pool.token0, pool.token1, (pool as Pool).fee))
+          poolAddressSet.add(Pool.getAddress(pool.token0, pool.token1, (pool as Pool).tickSpacing))
         } else if (pool instanceof Pair) {
           const pair = pool
           poolAddressSet.add(Pair.getAddress(pair.token0, pair.token1))
